@@ -1,0 +1,22 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+<h1>Create</h1>
+<form method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All"></div>
+
+    Name<input asp-for="Name" /><br />
+    Age<input asp-for="Age" /><br />
+    Email <input asp-for="Email" /><br />
+    Department
+    <select asp-for="DeptNo" asp-items="ViewBag.Departments">
+    </select>
+        <div>
+            <input type="file" name="stdimg" />"
+        </div>
+    <input type="submit" value="add" />
+</form>
+
